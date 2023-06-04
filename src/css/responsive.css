@@ -1,0 +1,366 @@
+@media (max-width: 1200px) {
+    #conteiner-titulo h1 {
+        font-size: 4rem;
+        letter-spacing: 0.5rem;
+    }
+    #descricao-design {
+        font-size: 1.4rem;
+    }
+    #descricao-fotografia {
+        font-size: 1.4rem;
+    }
+    #clientes {
+        gap: 3rem;
+    }
+}
+@media (max-width: 1024px) {
+    #conteiner-titulo h1 {
+        font-size: 3.8rem;
+    }
+    #conteiner-titulo-transformar {
+        width: 38rem;
+    }
+    .conteiner-descricao {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 38rem;
+    }
+    #conteiner-titulo-publico {
+        width: 38rem;
+    }
+    .conteiner-botao {
+        width: 38rem;
+    }
+    #descricao-marca {
+        font-size: 1.4rem;
+    }
+    #titulo-tranformar {
+        font-size: 3rem;
+    }
+    #descricao-marca {
+        font-size: 1.5rem;
+    }
+    #ler-sobre-marca {
+        font-size: 1.2rem;
+    }
+    #titulo-publico {
+        font-size: 3rem;
+    }
+    #descricao-publico {
+        font-size: 1.5rem;
+    }
+    #ler-sobre-publico {
+        font-size: 1.2rem;
+    }
+    #descricao-design {
+        font-size: 1.2rem;
+        line-height: 2.2rem;
+    }
+    #descricao-fotografia {
+        font-size: 1.2rem;
+        line-height: 2.2rem;
+    }
+    #testemunhos-clientes {
+        margin: 8rem 0;
+    }
+    #testemunhos-clientes h3 {
+        font-size: 1.6rem;
+    }
+    .imagens-clientes {
+        width: 5.5rem;
+    }
+    .opiniao-clientes {
+        font-size: 1.5rem;
+        line-height: 2.3rem;
+        width: 29rem;
+    }
+    .nome {
+        font-size: 1.6rem;
+        margin-bottom: 0.5rem;
+    }
+    .profissao {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 768px) {
+    #menu {
+        display: none;
+    }
+    #nav {
+        display: block;
+    }
+    #menu-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        position: absolute;
+        z-index: 8;
+        width: 40%;
+        height: 22rem;
+        top: 7rem;
+        right: 1rem;
+        background: #ffffff;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #nav.aberto #menu-mobile {
+        visibility: visible;
+        overflow-y: auto;
+        flex-direction: column; 
+    }
+    #botao-menu-mobile {
+        position: absolute;
+        display: flex;
+        padding: 1rem 2rem;
+        font-size: 1.6rem;
+        top: 1.5rem;
+        right: 0;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.7rem;
+        z-index: 8;
+    }
+    #menu-mobile li {
+        font-size: 1.8rem;
+    }
+    #menu-mobile a {
+        color: #5a636c;
+    }
+    #menu-mobile button {
+        font-size: 1.4rem;
+        padding: 1.5rem 2rem;
+        border-radius: 2.5rem;
+        border: none;
+        background-color: #fad400;
+        text-transform: uppercase;
+        font-family: 'Fraunces', serif;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    #hamburger {
+        border-top: 0.2rem solid #ffffff;
+        width: 2rem;
+        display: block;
+    }
+    #hamburger::after, #hamburger::before {
+        content: '';
+        display: block;
+        width: 2rem;
+        height: 0.2rem;
+        background-color: #ffffff;
+        margin-top: 0.5rem;
+        transition: 0.3s;
+        position: relative;
+    }
+    #nav.aberto #hamburger {
+        border-top-color: transparent;
+    }
+    #nav.aberto #hamburger::after {
+        transform: rotate(-135deg);
+        top: -0.7rem;
+    }
+    #nav.aberto #hamburger::before {
+        transform: rotate(135deg);
+    }
+    #conteiner-titulo h1 {
+        font-size: 2.8rem;
+    }
+    #conteiner-imagem-seta {
+        width: 3.5%;
+    }
+    #transformar {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #imagem-ovo {
+        width: 100%;
+    }
+    #sobre-marca {
+        width: 100%;
+        text-align: center;
+        padding: 5rem 0;
+    }
+    #conteiner-titulo-transformar {
+        width: 100%;
+    }
+    #titulo-tranformar {
+        font-size: 3.5rem; 
+    }
+    .conteiner-descricao {
+        width: 35rem;
+    }
+    #descricao-marca {
+        font-size: 1.8rem;
+    }
+    .conteiner-botao {
+        width: 100%;
+    }
+    #ler-sobre-marca {
+        font-size: 1.4rem;
+    }
+    #publico {
+        display: flex;
+        flex-direction: column;
+    }
+    #imagem-taca {
+        width: 100%;
+    }
+    #sobre-publico {
+        width: 100%;
+        text-align: center;
+        padding: 5rem 0;
+    }
+    #titulo-publico {
+        font-size: 3.5rem; 
+    }
+    #sobre-publico .conteiner-descricao {
+        width: 32rem;
+    }
+    #descricao-publico {
+        font-size: 1.8rem;
+    }
+    #ler-sobre-publico {
+        font-size: 1.4rem;
+    }
+    #conteiner-titulo-descricao-design {
+        gap: 1rem;
+    }
+    #titulo-design {
+        font-size: 2.4rem;
+    }
+    #descricao-design {
+        line-height: 1.8rem;
+    }
+    #conteiner-titulo-descricao-fotografia {
+        gap: 1rem;
+    }
+    #titulo-fotografia {
+        font-size: 2.4rem;
+    }
+    #descricao-fotografia {
+        line-height: 1.8rem;
+    }
+    #clientes {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .opiniao-clientes {
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+    }
+}
+@media (max-width: 480px) {
+    #cabecalho {
+        padding: 3rem;
+    }
+    #nav button {
+        margin-top: 0.9rem;
+    }
+    #menu-mobile {
+        width: 80%;
+        right: 3.7rem;
+    }
+    #conteiner-titulo {
+        top: 32%;
+    }
+    #conteiner-titulo h1 {
+        font-size: 4rem;
+        text-align: center;
+        letter-spacing: 0.8rem;
+    }
+    #conteiner-imagem-seta {
+        top: 65%;
+        width: 7%;
+    }
+    .conteiner-descricao {
+        width: 30rem;
+    }
+    #descricao-marca {
+        font-size: 1.6rem;
+    }
+    #sobre-publico .conteiner-descricao {
+        width: 28rem;
+    }
+    #descricao-publico {
+        font-size: 1.6rem;
+    }
+    #conteiner-design-fotografia {
+        flex-direction: column;
+    }
+    #conteiner-titulo-descricao-design {
+        width: 40rem;
+        gap: 3rem;
+    }
+    #titulo-design {
+        font-size: 4rem;
+    }
+    #descricao-design {
+        font-size: 1.9rem;
+        line-height: 3rem;
+    }
+    #conteiner-titulo-descricao-fotografia {
+        width: 40rem;
+        gap: 3rem;
+    }
+    #titulo-fotografia {
+        font-size: 4rem;
+    }
+    #descricao-fotografia {
+        font-size: 1.9rem;
+        line-height: 3rem;
+    }
+    .imagens-clientes {
+        width: 7rem;
+    }
+    #galeria-imagens {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    #opcoes a {
+        font-size: 1.8rem;
+    }
+}
+@media (max-width: 320px) {
+    #conteiner-titulo h1 {
+        font-size: 3rem;
+        text-align: center;
+        letter-spacing: 0.8rem;
+    }
+    #titulo-tranformar {
+        font-size: 3rem;
+    }
+    #conteiner-titulo-publico {
+        width: 100%;
+    }
+    #conteiner-titulo-descricao-design {
+        width: 30rem;
+        gap: 3rem;
+    }
+    #titulo-design {
+        font-size: 3rem;
+    }
+    #descricao-design {
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+    }
+    #conteiner-titulo-descricao-fotografia {
+        width: 30rem;
+        gap: 3rem;
+    }
+    #titulo-fotografia {
+        font-size: 3rem;
+    }
+    #descricao-fotografia {
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+    }
+    #opcoes ul {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+}

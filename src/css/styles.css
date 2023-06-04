@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+html {
+    font-size: 62.5%;
+}
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+#cabecalho {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
+}
+#logo {
+    width: 14rem;
+}
+#menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 3rem;
+}
+#menu a {
+    padding: 0.5rem;
+    font-size: 1.7rem;
+    color: #ffffff;
+    font-family: 'Barlow', sans-serif;
+}
+#menu button {
+    font-size: 1.4rem;
+    padding: 1.5rem 2.5rem;
+    border-radius: 2.5rem;
+    border: none;
+    text-transform: uppercase;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+#menu button:hover {
+    background-color: #6bccf9;
+    color: #ffffff;
+}
+#nav {
+    display: none;
+}
+#laranja {
+    position: relative;
+}
+#conteiner-titulo {
+    position: absolute;
+    z-index: 1;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#conteiner-titulo h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    color: #ffffff;
+    font-size: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.8rem;
+}
+#conteiner-imagem-seta {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2.5%;
+}
+#transformar {
+    display: flex;
+}
+#sobre-marca {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+#conteiner-titulo-transformar {
+    width: 40rem;
+}
+#titulo-tranformar {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 3.5rem;
+    color: #23303e;
+}
+.conteiner-descricao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40rem;
+}
+#descricao-marca {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.6rem;
+    color: #818498;
+    line-height: 2.5rem;
+}
+.conteiner-botao {
+    width: 40rem;
+}
+#ler-sobre-marca {
+    border: none;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 1.6rem;
+    padding: 0 0.8rem;
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+}
+#ler-sobre-marca::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 100%;
+    left: 0;
+    background-color: #fad400;
+    opacity: 0.3;
+    width: 100%;
+    height: 0.7rem;
+    border-radius: 1rem;
+    transition: 0.3s ease-in-out;
+}
+#ler-sobre-marca:hover::after {
+    opacity: 1;
+}
+#imagem-ovo {
+    width: 50%;
+}
+#publico {
+    display: flex;
+}
+#imagem-taca {
+    width: 50%;
+}
+#sobre-publico {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+#conteiner-titulo-publico {
+    width: 40rem;
+}
+#titulo-publico {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 3.5rem;
+    color: #23303e;
+}
+#descricao-publico {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.6rem;
+    color: #818498;
+    line-height: 2.5rem;
+}
+#ler-sobre-publico {
+    border: none;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 1.6rem;
+    padding: 0 0.8rem;
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+}
+#ler-sobre-publico::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 100%;
+    left: 0;
+    background-color: #fe7867;
+    opacity: 0.3;
+    width: 100%;
+    height: 0.7rem;
+    border-radius: 1rem;
+    transition: 0.3s ease-in-out;
+}
+#ler-sobre-publico:hover::after {
+    opacity: 1;
+}
+#conteiner-design-fotografia {
+    display: flex;
+}
+#sobre-design {
+    position: relative;
+}
+#conteiner-titulo-descricao-design {
+    position: absolute;
+    z-index: 2;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+#titulo-design {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    color: #25564b;
+}
+#descricao-design {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.6rem;
+    color: #25564b;
+    line-height: 2.5rem;
+    text-align: center;
+}
+#sobre-fotografia {
+    position: relative;
+}
+#conteiner-titulo-descricao-fotografia {
+    position: absolute;
+    z-index: 2;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+#titulo-fotografia {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    color: #19536b;
+}
+#descricao-fotografia {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.6rem;
+    color: #19536b;
+    line-height: 2.5rem;
+    text-align: center;
+}
+#testemunhos-clientes {
+    margin: 15rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#testemunhos-clientes h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    color: #a7abae;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    margin-bottom: 7rem;
+}
+#clientes {
+    display: flex;
+    gap: 5rem;
+}
+#emily {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+.imagens-clientes {
+    width: 6.5rem;
+    border-radius: 5rem;
+}
+.opiniao-clientes {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #5a636c;
+    line-height: 2.5rem;
+    width: 35rem;
+}
+#emily div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.nome {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    color: #23303e;
+    font-size: 1.8rem;
+}
+.profissao {
+    font-family: 'Barlow', serif;
+    color: #a7abae;
+    font-size: 1.4rem;
+}
+#thomas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+#thomas div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+#jennie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+#jennie div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+#galeria-imagens {
+    display: flex;
+}
+#rodape {
+    background-color: #93d3c3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+#rodape h3 {
+    font-family: 'Barlow', serif;
+    font-weight: 900;
+    font-size: 3rem;
+    color: #33796a;
+    margin-top: 5rem;
+}
+#opcoes ul {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+#opcoes a {
+    font-family: 'Barlow', serif;
+    font-weight: 600;
+    color: #549485;
+    font-size: 1.6rem;
+    padding: 0.5rem;
+}
+#opcoes a:hover {
+    color: #ffffff;
+}
+#links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+#links a {
+    padding: 0.5rem;
+}
