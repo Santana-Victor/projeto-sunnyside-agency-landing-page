@@ -12,113 +12,113 @@ html {
 }
 img {
     width: 100%;
-    max-width: 100%;
     height: auto;
 }
-#cabecalho {
+.cabecalho {
     position: absolute;
     z-index: 2;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem 3rem;
+    padding: 3rem 2.5rem;
 }
-#logo {
+.logo {
     width: 14rem;
 }
-#menu {
+#botao-menu-mobile {
+    display: none;
+}
+.menu {
     display: flex;
     align-items: center;
     height: 100%;
     gap: 3rem;
 }
-#menu a {
+.menu li a {
     padding: 0.5rem;
     font-size: 1.7rem;
     color: #ffffff;
     font-family: 'Barlow', sans-serif;
 }
-#menu button {
-    font-size: 1.4rem;
+.menu .contato {
     padding: 1.5rem 2.5rem;
     border-radius: 2.5rem;
-    border: none;
-    text-transform: uppercase;
+    font-size: 1.4rem;
     font-family: 'Fraunces', serif;
+    text-transform: uppercase;
     font-weight: 700;
+    border: none;
     cursor: pointer;
+    transition: 0.2s ease-in-out;
+    color: #000000;
+    background-color: #ffffff;
 }
-#menu button:hover {
+.menu .contato:hover {
     background-color: #6bccf9;
     color: #ffffff;
 }
-#nav {
-    display: none;
-}
-#laranja {
+.imagem-topo {
     position: relative;
 }
-#conteiner-titulo {
+.imagem-topo .imagem-laranja {
+    width: 100%;
+    height: auto;
+}
+.titulo-topo {
     position: absolute;
     z-index: 1;
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-#conteiner-titulo h1 {
+.titulo-topo h1 {
     font-family: 'Fraunces', serif;
     font-weight: 900;
     color: #ffffff;
-    font-size: 5rem;
+    font-size: clamp(2.5rem, 3vw, 5rem);
     text-transform: uppercase;
     letter-spacing: 0.8rem;
 }
-#conteiner-imagem-seta {
+.imagem-seta {
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 2.5%;
 }
-#transformar {
+.transformar {
+    width: 100%;
     display: flex;
 }
-#sobre-marca {
+.sobre-marca {
     width: 50%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     gap: 3rem;
+    padding: 1rem;
 }
-#conteiner-titulo-transformar {
-    width: 40rem;
+.conteiner-titulo-transformar, .conteiner-descricao, .conteiner-botao {
+    width: min(80%, 40rem);
 }
-#titulo-tranformar {
+.titulo-tranformar {
     font-family: 'Fraunces', serif;
     font-weight: 900;
-    font-size: 3.5rem;
+    font-size: clamp(2.5rem, 3vw, 3.5rem);
     color: #23303e;
 }
-.conteiner-descricao {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40rem;
-}
-#descricao-marca {
+.descricao-marca {
     font-family: 'Barlow', sans-serif;
     font-size: 1.6rem;
     color: #818498;
     line-height: 2.5rem;
 }
-.conteiner-botao {
-    width: 40rem;
-}
-#ler-sobre-marca {
+.ler-sobre-marca {
     border: none;
+    background: none;
     font-family: 'Fraunces', serif;
     font-weight: 900;
     font-size: 1.6rem;
@@ -127,7 +127,7 @@ img {
     position: relative;
     cursor: pointer;
 }
-#ler-sobre-marca::after {
+.ler-sobre-marca::after {
     content: '';
     position: absolute;
     z-index: -1;
@@ -140,19 +140,23 @@ img {
     border-radius: 1rem;
     transition: 0.3s ease-in-out;
 }
-#ler-sobre-marca:hover::after {
+.ler-sobre-marca:hover::after {
     opacity: 1;
 }
-#imagem-ovo {
+.ler-sobre-marca a {
+    color: #000000;
+}
+.imagem-ovo {
     width: 50%;
 }
-#publico {
+.publico {
+    width: 100%;
     display: flex;
 }
-#imagem-taca {
+.imagem-taca {
     width: 50%;
 }
-#sobre-publico {
+.sobre-publico {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -160,23 +164,24 @@ img {
     justify-content: center;
     gap: 3rem;
 }
-#conteiner-titulo-publico {
-    width: 40rem;
+.conteiner-titulo-publico {
+    width: min(80%, 40rem);
 }
-#titulo-publico {
+.titulo-publico {
     font-family: 'Fraunces', serif;
     font-weight: 900;
-    font-size: 3.5rem;
+    font-size: clamp(2.5rem, 3vw, 3.5rem);
     color: #23303e;
 }
-#descricao-publico {
+.descricao-publico {
     font-family: 'Barlow', sans-serif;
     font-size: 1.6rem;
     color: #818498;
     line-height: 2.5rem;
 }
-#ler-sobre-publico {
+.ler-sobre-publico {
     border: none;
+    background: none;
     font-family: 'Fraunces', serif;
     font-weight: 900;
     font-size: 1.6rem;
@@ -185,7 +190,7 @@ img {
     position: relative;
     cursor: pointer;
 }
-#ler-sobre-publico::after {
+.ler-sobre-publico::after {
     content: '';
     position: absolute;
     z-index: -1;
@@ -198,16 +203,19 @@ img {
     border-radius: 1rem;
     transition: 0.3s ease-in-out;
 }
-#ler-sobre-publico:hover::after {
+.ler-sobre-publico:hover::after {
     opacity: 1;
 }
-#conteiner-design-fotografia {
+.ler-sobre-publico a {
+    color: #000000;
+}
+.conteiner-design-fotografia {
     display: flex;
 }
-#sobre-design {
+.sobre-design {
     position: relative;
 }
-#conteiner-titulo-descricao-design {
+.conteiner-titulo-descricao-design {
     position: absolute;
     z-index: 2;
     top: 75%;
@@ -219,24 +227,24 @@ img {
     justify-content: center;
     gap: 3rem;
 }
-#titulo-design {
+.titulo-design {
     font-family: 'Fraunces', serif;
     font-weight: 900;
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 5vw, 2.5rem);
     text-transform: capitalize;
     color: #25564b;
 }
-#descricao-design {
+.descricao-design {
     font-family: 'Barlow', sans-serif;
-    font-size: 1.6rem;
+    font-size: clamp(1.2rem, 2vw, 1.6rem);
     color: #25564b;
     line-height: 2.5rem;
     text-align: center;
 }
-#sobre-fotografia {
+.sobre-fotografia {
     position: relative;
 }
-#conteiner-titulo-descricao-fotografia {
+.conteiner-titulo-descricao-fotografia {
     position: absolute;
     z-index: 2;
     top: 75%;
@@ -248,37 +256,39 @@ img {
     justify-content: center;
     gap: 3rem;
 }
-#titulo-fotografia {
+.titulo-fotografia {
     font-family: 'Fraunces', serif;
     font-weight: 900;
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 5vw, 2.5rem);
     text-transform: capitalize;
     color: #19536b;
 }
-#descricao-fotografia {
+.descricao-fotografia {
     font-family: 'Barlow', sans-serif;
-    font-size: 1.6rem;
+    font-size: clamp(1.2rem, 2vw, 1.6rem);
     color: #19536b;
     line-height: 2.5rem;
     text-align: center;
 }
-#testemunhos-clientes {
+.testemunhos-clientes {
     margin: 15rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#testemunhos-clientes h3 {
+.testemunhos-clientes h3 {
     font-family: 'Fraunces', serif;
     font-weight: 900;
     color: #a7abae;
-    font-size: 1.8rem;
+    font-size: clamp(1.6rem, 2vw, 2rem);
     text-transform: uppercase;
     letter-spacing: 0.5rem;
     margin-bottom: 7rem;
 }
-#clientes {
+.clientes {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 5rem;
 }
 #emily {
@@ -293,7 +303,7 @@ img {
 }
 .opiniao-clientes {
     font-family: 'Barlow', sans-serif;
-    font-size: 1.8rem;
+    font-size: clamp(1.5rem, 2vw, 1.8rem);
     text-align: center;
     color: #5a636c;
     line-height: 2.5rem;
@@ -340,44 +350,53 @@ img {
     align-items: center;
     gap: 1rem;
 }
-#galeria-imagens {
+.galeria-imagens {
     display: flex;
 }
-#rodape {
+.rodape {
     background-color: #93d3c3;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 3rem;
 }
-#rodape h3 {
+.rodape h3 {
     font-family: 'Barlow', serif;
     font-weight: 900;
     font-size: 3rem;
     color: #33796a;
     margin-top: 5rem;
 }
-#opcoes ul {
+.opcoes ul {
     display: flex;
     align-items: center;
     gap: 4rem;
 }
-#opcoes a {
+.opcoes a {
     font-family: 'Barlow', serif;
     font-weight: 600;
     color: #549485;
     font-size: 1.6rem;
     padding: 0.5rem;
+    transition: 0.2s ease-in-out;
 }
-#opcoes a:hover {
+.opcoes a:hover {
     color: #ffffff;
 }
-#links {
+.links ul {
     display: flex;
     gap: 1rem;
     align-items: center;
     margin-bottom: 5rem;
 }
-#links a {
+.links a {
     padding: 0.5rem;
+}
+.icones-rodape {
+    font-size: 2.5rem;
+    color: #2c7566;
+    transition: 0.2s ease-in-out;
+}
+.icones-rodape:hover {
+    color: #ffffff;
 }
