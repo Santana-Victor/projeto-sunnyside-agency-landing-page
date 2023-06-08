@@ -1,185 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./src/imagens/favicon-32x32.png">
-  <link rel="stylesheet" href="./src/css/styles.css"/>
-  <link rel="stylesheet" href="./src/css/responsive.css"/>
-  <title>Frontend Mentor | Sunnyside agency landing page</title>
-</head>
-<body>
-  <header id="cabecalho">
-    <div id="logo">
-      <img src="./src/imagens/logo.svg" id="imagem-logo" width="124" height="24" loading="lazy"/>
-    </div>
-    <nav>
-      <ul id="menu">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Projects</a></li>
-        <button>Contact</button>
-      </ul>
-    </nav>
-    <nav id="nav">
-      <button id="botao-menu-mobile"><span id="hamburger"></span></button>
-      <ul id="menu-mobile">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Projects</a></li>
-        <button>Contact</button>
-      </ul>
-    </nav>
-  </header>
-  <main id="conteiner">
-    <div id="laranja">
-      <div id="conteiner-titulo"><h1>We are creatives</h1></div>
-      <div id="conteiner-imagem-seta"><img src="./src/imagens/icon-arrow-down.svg" id="seta-baixo" width="36" height="114" loading="lazy"/></div>
-      <picture>
-        <source media="(max-width: 500px)" srcset="./src/imagens/mobile/image-header.jpg"/>
-        <img src="./src/imagens/desktop/image-header.jpg" id="imagem-laranja-cabecalho" width="2880"
-        height="1600" loading="lazy"/>
-      </picture>
-    </div>
-    <section id="transformar">
-      <article id="sobre-marca">
-        <div id="conteiner-titulo-transformar">
-          <h2 id="titulo-tranformar">Transform your<br>brand</h2>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/imagens/favicon-32x32.png"/>
+    <link rel="stylesheet" href="./src/css/styles.css"/>
+    <link rel="stylesheet" href="./src/css/responsive.css"/>
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+  </head>
+  <body>
+    <header class="cabecalho" role="banner">
+      <img src="./src/imagens/logo.svg" class="logo" alt="imagem logo" width="124" height="24"/>
+      <nav id="nav">
+        <button id="botao-menu-mobile" role="button" aria-label="Botão para abrir um menu flutuante">
+          <i class="fa-solid fa-bars" id="hamburger"></i>
+        </button>
+        <ul class="menu">
+          <li>
+            <a href="#" aria-label="Sobre a empresa">About</a>
+          </li>
+          <li>
+            <a href="#" aria-label="Veja nossos serviços">Services</a>
+          </li>
+          <li>
+            <a href="#" aria-label="veja nossos projetos">Projects</a>
+          </li>
+          <li>
+            <a href="#" aria-label="Entre em contato conosco" class="contato">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main role="main">
+      <div class="imagem-topo">
+        <div class="titulo-topo">
+          <h1>We are creatives</h1>
         </div>
-        <div class="conteiner-descricao">
-          <p id="descricao-marca">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+        <div class="imagem-seta">
+          <img src="./src/imagens/icon-arrow-down.svg" alt="imagem de uma seta" width="36" height="114"/>
         </div>
-        <div class="conteiner-botao"><button id="ler-sobre-marca">Learn more</button></div>
-      </article>
-      <div id="imagem-ovo">
         <picture>
-          <source media="(max-width: 500px)" srcset="./src/imagens/mobile/image-transform.jpg"/>
-          <img src="./src/imagens/desktop/image-transform.jpg" width="720" height="600" loading="lazy"/>
+          <source media="(max-width: 500px)" srcset="./src/imagens/mobile/image-header.jpg"/>
+          <img src="./src/imagens/desktop/image-header.jpg" class="imagem-laranja" alt="Imagem de um fundo azul com uma laranja" width="2880" height="1600"/>
         </picture>
       </div>
-    </section>
-    <section id="publico">
-      <div id="imagem-taca">
-        <picture>
-          <source media="(max-width: 500px)" srcset="./src/imagens/mobile/image-stand-out.jpg"/>
-          <img src="./src/imagens/desktop/image-stand-out.jpg" width="720" height="600" loading="lazy"/>
-        </picture>
-      </div>
-      <article id="sobre-publico">
-        <div id="conteiner-titulo-publico">
-          <h2 id="titulo-publico">Stand out to the right audience</h2></div>
-        <div class="conteiner-descricao">
-          <p id="descricao-publico">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
-        </div>
-        <div class="conteiner-botao"><button id="ler-sobre-publico">Learn more</button></div>
-      </article>
-    </section>
-    <div id="conteiner-design-fotografia">
-      <section id="design">
-        <div id="sobre-design">
+      <section class="transformar">
+        <article class="sobre-marca" role="article">
+          <div class="conteiner-titulo-transformar">
+            <h2 class="titulo-tranformar">Transform your <br> brand</h2>
+          </div>
+          <div class="conteiner-descricao">
+            <p class="descricao-marca">We are a full-service creative agency specializing in helping
+              brands grow fast. Engage your clients through compelling visuals that do most of the
+              marketing for you.
+            </p>
+          </div>
+          <div class="conteiner-botao">
+            <button class="ler-sobre-marca" role="button">
+              <a href="#" aria-label="Leia mais sobre marketing">Learn more</a>
+            </button>
+          </div>
+        </article>
+        <div class="imagem-ovo">
           <picture>
-            <source media="(max-width: 500px)" srcset="./src/imagens/mobile/image-graphic-design.jpg"/>
-            <img src="./src/imagens/desktop/image-graphic-design.jpg" width="720" height="600" loading="lazy"/>
+            <source media="(max-width: 500px)" srcset="./src/imagens/mobile/image-transform.jpg"/>
+            <img src="./src/imagens/desktop/image-transform.jpg" width="720" height="600" loading="lazy" alt="imagem de um ovo"/>
           </picture>
-          <div id="conteiner-titulo-descricao-design">
-            <h2 id="titulo-design">Graphic design</h2>
-            <p id="descricao-design">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+        </div>
+      </section>
+      <section class="publico">
+        <div class="imagem-taca">
+          <picture>
+            <source media="(max-width: 500px)" srcset="./src/imagens/mobile/image-stand-out.jpg"/>
+            <img src="./src/imagens/desktop/image-stand-out.jpg" width="720" height="600" loading="lazy" alt="imagem de uma taça"/>
+          </picture>
+        </div>
+        <article class="sobre-publico" role="article">
+          <div class="conteiner-titulo-publico">
+            <h2 class="titulo-publico">Stand out to the right audience</h2></div>
+          <div class="conteiner-descricao">
+            <p class="descricao-publico">Using a collaborative formula of designers, researchers,
+              photographers, videographers, and copywriters, we’ll build and extend your brand in
+              digital places.</p>
+          </div>
+          <div class="conteiner-botao">
+            <button class="ler-sobre-publico" role="button">
+              <a href="#" aria-label="Leia mais sobre audiência">Learn more</a>
+            </button>
+          </div>
+        </article>
+      </section>
+      <div class="conteiner-design-fotografia">
+        <section class="design">
+          <div class="sobre-design">
+            <picture>
+              <source media="(max-width: 500px)" srcset="./src/imagens/mobile/image-graphic-design.jpg"/>
+              <img src="./src/imagens/desktop/image-graphic-design.jpg" width="720" height="600" loading="lazy" alt="Imagem de duas cerejas"/>
+            </picture>
+            <div class="conteiner-titulo-descricao-design">
+              <h2 class="titulo-design">Graphic design</h2>
+              <p class="descricao-design">Great design makes you memorable. We deliver artwork that 
+                underscores your brand message and captures potential clients’ attention.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="fotografia">
+          <div class="sobre-fotografia">
+            <picture>
+              <source media="(max-width: 500px)" srcset="./src/imagens/mobile/image-photography.jpg"/>
+              <img src="./src/imagens/desktop/image-photography.jpg" width="720" height="600" loading="lazy"
+              alt="Imagem de uma tangerina"/>
+            </picture>
+            <div class="conteiner-titulo-descricao-fotografia">
+              <h2 class="titulo-fotografia">Photography</h2>
+              <p class="descricao-fotografia">Increase your credibility by getting the most stunning, 
+                high-quality photos that improve your business image.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="testemunhos-clientes">
+        <div>
+          <h3>Client testimonials</h3>
+        </div>
+        <div class="clientes">
+          <div id="emily">
+            <img src="./src/imagens/image-emily.jpg" class="imagens-clientes" width="144" height="144"
+            loading="lazy" alt="Foto da Emily"/>
+            <p class="opiniao-clientes">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+            <div>
+              <h4 class="nome">Emily R.</h4>
+              <span class="profissao">Marketing Director</span>
+            </div>
+          </div>
+          <div id="thomas">
+            <img src="./src/imagens/image-thomas.jpg" class="imagens-clientes" width="144" height="144"
+            loading="lazy" alt="Foto do Thomas"/>
+            <p class="opiniao-clientes">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+            <div>
+              <h4 class="nome">Thomas S.</h4>
+              <span class="profissao">Chief Operating Officer</span>
+            </div>
+          </div>
+          <div id="jennie">
+            <img src="./src/imagens/image-jennie.jpg" class="imagens-clientes" width="144" height="144"
+            loading="lazy" alt="Foto da Jennie"/>
+            <p class="opiniao-clientes">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+            <div>
+              <h4 class="nome">Jennie F.</h4>
+              <span class="profissao">Business Owner</span>
+            </div>
           </div>
         </div>
       </section>
-      <section id="fotografia">
-        <div id="sobre-fotografia">
+      <div class="galeria-imagens">
+        <div>
           <picture>
-            <source media="(max-width: 500px)" srcset="./src/imagens/mobile/image-photography.jpg"/>
-            <img src="./src/imagens/desktop/image-photography.jpg" width="720" height="600" loading="lazy"/>
+            <source media="(max-width: 500px)" srcset="./src/imagens/mobile/image-gallery-milkbottles.jpg"/>
+            <img src="./src/imagens/desktop/image-gallery-milkbottles.jpg" width="720" height="894" loading="lazy" alt="imagem de garrafas de leite"/>
           </picture>
-          <div id="conteiner-titulo-descricao-fotografia">
-            <h2 id="titulo-fotografia">Photography</h2>
-            <p id="descricao-fotografia">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
-          </div>
         </div>
-      </section>
-    </div>
-    <section id="testemunhos-clientes">
+        <div>
+          <picture>
+            <source media="(max-width: 500px)" srcset="./src/imagens/mobile/image-gallery-orange.jpg"/>
+            <img src="./src/imagens/desktop/image-gallery-orange.jpg" width="720" height="894" loading="lazy"
+            alt="Imagem de uma laranja em um prato"/>
+          </picture>
+        </div>
+        <div>
+          <picture>
+            <source media="(max-width: 500px)" srcset="./src/imagens/mobile/image-gallery-cone.jpg"/>
+            <img src="./src/imagens/desktop/image-gallery-cone.jpg" width="720" height="894"
+            loading="lazy" alt="imagem de uma casquinha de sorvete"/>
+          </picture>
+        </div>
+        <div>
+          <picture>
+            <source media="(max-width: 500px)" srcset="./src/imagens/mobile/image-gallery-sugar-cubes.jpg"/>
+            <img src="./src/imagens/desktop/image-gallery-sugarcubes.jpg" width="720" height="894" loading="lazy" alt="Imagem de cubos de açucar"/>
+          </picture>
+        </div>
+      </div>
+    </main>
+    <footer class="rodape" role="contentinfo">
       <div>
-        <h3>Client testimonials</h3>
+        <h3>sunnyside</h3>
       </div>
-      <div id="clientes">
-        <div id="emily">
-          <img src="./src/imagens/image-emily.jpg" class="imagens-clientes" width="144" height="144"
-          loading="lazy"/>
-          <p class="opiniao-clientes">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
-          <div>
-            <h4 class="nome">Emily R.</h4>
-            <span class="profissao">Marketing Director</span>
-          </div>
-        </div>
-        <div id="thomas">
-          <img src="./src/imagens/image-thomas.jpg" class="imagens-clientes" width="144" height="144"
-          loading="lazy"/>
-          <p class="opiniao-clientes">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
-          <div>
-            <h4 class="nome">Thomas S.</h4>
-            <span class="profissao">Chief Operating Officer</span>
-          </div>
-        </div>
-        <div id="jennie">
-          <img src="./src/imagens/image-jennie.jpg" class="imagens-clientes" width="144" height="144"
-          loading="lazy"/>
-          <p class="opiniao-clientes">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
-          <div>
-            <h4 class="nome">Jennie F.</h4>
-            <span class="profissao">Business Owner</span>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div id="galeria-imagens">
-      <div id="imagem-leite">
-        <picture>
-          <source media="(max-width: 500px)" srcset="./src/imagens/mobile/image-gallery-milkbottles.jpg"/>
-          <img src="./src/imagens/desktop/image-gallery-milkbottles.jpg" width="720" height="894" loading="lazy"/>
-        </picture>
-      </div>
-      <div id="imagem-laranja">
-        <picture>
-          <source media="(max-width: 500px)" srcset="./src/imagens/mobile/image-gallery-orange.jpg"/>
-          <img src="./src/imagens/desktop/image-gallery-orange.jpg" width="720" height="894" loading="lazy"/>
-        </picture>
-      </div>
-      <div id="imagem-casquinnha-sorvete">
-        <picture>
-          <source media="(max-width: 500px)" srcset="./src/imagens/mobile/image-gallery-cone.jpg"/>
-          <img src="./src/imagens/desktop/image-gallery-cone.jpg" width="720" height="894"
-          loading="lazy"/>
-        </picture>
-      </div>
-      <div id="imagem-cubos-acucar">
-        <picture>
-          <source media="(max-width: 500px)" srcset="./src/imagens/mobile/image-gallery-sugar-cubes.jpg"/>
-          <img src="./src/imagens/desktop/image-gallery-sugarcubes.jpg" width="720" height="894" loading="lazy"/>
-        </picture>
-      </div>
-    </div>
-  </main>
-  <footer id="rodape">
-    <div>
-      <h3>sunnyside</h3>
-    </div>
-    <nav id="opcoes">
-      <ul>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Projects</a>
-      </ul>
-    </nav>
-    <div id="links">
-      <a href="#"><img src="./imagens/icon-facebook.svg" width="20" height="20" loading="lazy"/></a>
-      <a href="#"><img src="./imagens/icon-instagram.svg" width="20" height="20" loading="lazy"/></a>
-      <a href="#"><img src="./imagens/icon-twitter.svg" width="20" height="17" loading="lazy"/></a>
-      <a href="#"><img src="./imagens/icon-pinterest.svg" width="20" height="20" loading="lazy"/></a>
-    </div>
-  </footer>
-  <script src="./src/js/index.js"></script>
-</body>
+      <nav class="opcoes">
+        <ul>
+          <li>
+            <a href="#" aria-label="Sobre a empresa">About</a>
+          </li>
+          <li>
+            <a href="#" aria-label="Veja nossos serviços">Services</a>
+          </li>
+          <li>
+            <a href="#" aria-label="Veja nossos projetos">Projects</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="links">
+        <ul>
+          <li>
+            <a href="#" aria-label="Acesse nosso facebook">
+              <i class="fa-brands fa-square-facebook icones-rodape"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Acesse nosso instagram">
+              <i class="fa-brands fa-instagram icones-rodape"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Acesse nosso twitter">
+              <i class="fa-brands fa-twitter icones-rodape"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Acesse nosso pinterest">
+              <i class="fa-brands fa-pinterest icones-rodape"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="./src/js/index.js"></script>
+  </body>
 </html>
