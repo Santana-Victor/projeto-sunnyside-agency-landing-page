@@ -25,13 +25,12 @@
     .menu {
         flex-direction: column;
         justify-content: center;
-        gap: 2rem;
         position: absolute;
         z-index: 8;
-        width: 40%;
-        height: 22rem;
-        top: 7rem;
-        right: 1rem;
+        width: 35%;
+        height: 24rem;
+        top: 8rem;
+        right: 3rem;
         background: #ffffff;
         visibility: hidden;
         overflow-y: hidden;
@@ -41,27 +40,19 @@
         overflow-y: auto;
     }
     #botao-menu-mobile {
-        position: absolute;
-        display: flex;
-        padding: 1rem 2rem;
-        font-size: 1.6rem;
-        top: 1.5rem;
-        right: 0;
+        display: block;
+        padding: 1rem;
         border: none;
         background: none;
-        cursor: pointer;
-        gap: 0.7rem;
-        z-index: 8;
     }
-    .menu li {
+    .menu li a {
         font-size: 1.8rem;
-    }
-    .menu a {
         color: #5a636c;
     }
-    .menu button {
+    .menu .contato {
         padding: 1.5rem 2rem;
         background-color: #fad400;
+        transition: none;
     }
     #hamburger {
         font-size: 2.5rem;
@@ -107,8 +98,12 @@
     }
 }
 @media (max-width: 480px) {
+    .cabecalho {
+        padding: 2rem 1.5rem;
+    }
     .menu {
         width: 50%;
+        right: 1.5rem;
     }
     .imagem-seta {
         top: 65%;
@@ -123,6 +118,9 @@
     }
 }
 @media (max-width: 320px) {
+    .menu {
+        right: 1rem;
+    }
     .titulo-design {
         font-size: 2rem;
     }
