@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+:root {
+  --soft-red: #fe7867;
+  --yellow: #fad400;
+  --dark-desaturated-cyan: #25564b;
+  --dark-blue: #19536b;
+  --dark-moderate-cyan: #458c7e;
+}
