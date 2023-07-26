@@ -1,0 +1,22 @@
+.svg {
+  width: 35px;
+  height: auto;
+}
+
+@media (max-width: 1024px) {
+  .svg {
+    width: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .svg {
+    width: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .svg {
+    width: 30px;
+  }
+}

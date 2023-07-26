@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -6,9 +9,14 @@
 }
 
 :root {
-  --soft-red: #fe7867;
-  --yellow: #fad400;
+  --btn-bg-red: #fe7867;
+  --btn-bg-yellow: #fad400;
   --dark-desaturated-cyan: #25564b;
   --dark-blue: #19536b;
   --dark-moderate-cyan: #458c7e;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }

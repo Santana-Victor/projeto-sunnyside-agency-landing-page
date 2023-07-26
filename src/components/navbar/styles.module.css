@@ -1,0 +1,40 @@
+.navBar__ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navBar__li {
+  padding: 5px;
+}
+
+.navBar__a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+}
+
+.navBar__button {
+  border: none;
+  border-radius: 25px;
+  padding: 15px 20px;
+  cursor: pointer;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: "Fraunces", serif;
+  transition: 0.3s ease-in-out;
+}
+
+.navBar__button:hover {
+  color: #ffffff;
+  background-color: #3cbcfc;
+}
+
+@media (max-width: 768px) {
+  .navBar__ul {
+    display: none;
+  }
+}

@@ -1,0 +1,52 @@
+.nav__ul {
+  width: 40%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  position: absolute;
+  z-index: 4;
+  top: 80px;
+  right: 30px;
+}
+
+.nav__li {
+  padding: 5px;
+}
+
+.nav__a {
+  color: #171717;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Barlow", sans-serif;
+}
+
+.nav__button {
+  border: none;
+  border-radius: 25px;
+  padding: 15px 20px;
+  cursor: pointer;
+  color: #000000;
+  background-color: var(--btn-bg-yellow);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: "Fraunces", serif;
+  transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 480px) {
+  .nav__ul {
+    width: 60%;
+    right: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .nav__ul {
+    width: 80%;
+  }
+}
