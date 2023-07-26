@@ -1,6 +1,6 @@
 import styles from "./styles.module.css";
 
-import { informationsNavBar } from "../../../informations/informationsNavBar";
+import { informationsNavBar } from "../../../../informations/informationsNavBar";
 
 interface PropsLinksMenuMobile {
   open: boolean;
