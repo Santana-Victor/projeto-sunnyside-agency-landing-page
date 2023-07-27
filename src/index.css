@@ -11,9 +11,13 @@
 :root {
   --btn-bg-red: #fe7867;
   --btn-bg-yellow: #fad400;
-  --dark-desaturated-cyan: #25564b;
-  --dark-blue: #19536b;
+  --txt-graphic-design: #25564b;
+  --txt-photography: #19536b;
   --dark-moderate-cyan: #458c7e;
+  --txt-color: #23303e;
+  --dim-gray: #737373;
+  --color-title-client: #a7abae;
+  --txt-opinion-client: #5a636c;
 }
 
 img {
