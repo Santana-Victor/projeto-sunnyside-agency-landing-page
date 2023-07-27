@@ -1,0 +1,40 @@
+.section {
+  width: 50%;
+  position: relative;
+}
+
+.section__container {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.container__container {
+  width: 300px;
+}
+
+.container__about {
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "Barlow", sans-serif;
+  text-align: center;
+  color: var(--txt-graphic-design);
+}
+
+.container__about.photography {
+  color: var(--txt-photography);
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+}

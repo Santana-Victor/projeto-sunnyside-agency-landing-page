@@ -1,0 +1,11 @@
+.container {
+  width: 300px;
+}
+
+.opinion {
+  color: var(--txt-opinion-client);
+  font-size: 16px;
+  text-align: center;
+  font-family: "Barlow", sans-serif;
+  line-height: 25px;
+}

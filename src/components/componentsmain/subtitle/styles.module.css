@@ -1,0 +1,33 @@
+.subtitle {
+  font-size: 36px;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  color: var(--txt-color);
+}
+
+.subtitle.graphic {
+  color: var(--txt-graphic-design);
+}
+
+.subtitle.photography {
+  color: var(--txt-photography);
+}
+
+.subtitle.clients {
+  color: var(--color-title-client);
+  font-size: 22px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .subtitle {
+    text-align: center;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .subtitle {
+    font-size: 30px;
+  }
+}

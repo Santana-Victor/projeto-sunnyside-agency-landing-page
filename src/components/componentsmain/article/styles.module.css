@@ -1,0 +1,35 @@
+.article {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.article__container {
+  width: min(80%, 400px);
+}
+
+.about {
+  font-size: 18px;
+  font-family: "Barlow", sans-serif;
+  color: var(--dim-gray);
+}
+
+@media (max-width: 768px) {
+  .article {
+    width: 100%;
+    padding: 40px 0;
+  }
+
+  .article__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about {
+    text-align: center;
+  }
+}

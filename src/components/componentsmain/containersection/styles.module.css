@@ -1,0 +1,14 @@
+.container {
+  width: 100%;
+}
+
+.container.design_photography {
+  width: 100%;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .container.design_photography {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,15 @@
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+  }
+  .section.transform {
+    flex-direction: column-reverse;
+  }
+}

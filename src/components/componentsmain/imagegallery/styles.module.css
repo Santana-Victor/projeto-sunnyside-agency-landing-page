@@ -1,0 +1,11 @@
+.container_images {
+  width: 100%;
+  display: flex;
+}
+
+@media (max-width: 500px) {
+  .container_images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
