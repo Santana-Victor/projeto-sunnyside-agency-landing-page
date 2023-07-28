@@ -11,7 +11,7 @@ interface PropsArticle {
 
 export default function Article({ type, title, about }: PropsArticle) {
   return (
-    <article className={styles.article}>
+    <article className={styles.article} role='article'>
       <div className={styles.article__container}>
         <Subtitle type={type}>{title}</Subtitle>
       </div>

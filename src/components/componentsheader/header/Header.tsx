@@ -16,6 +16,8 @@ export default function Header() {
         <img
           src='/images/desktop/image-header.jpg'
           alt='blue background with an orange'
+          width={2880}
+          height={1600}
         />
       </picture>
       <div className={styles.header__container}>

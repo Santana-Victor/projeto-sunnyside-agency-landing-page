@@ -12,6 +12,8 @@ export default function MenuMobile() {
     <nav className={styles.nav}>
       <button
         className={styles.nav__button_icon}
+        role='button'
+        aria-label='Button that opens a menu'
         onClick={() => {
           setOpen(!open);
         }}
