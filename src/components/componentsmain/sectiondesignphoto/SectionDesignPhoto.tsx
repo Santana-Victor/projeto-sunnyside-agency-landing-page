@@ -13,7 +13,7 @@ interface PropsGraphicDesignPhotography {
   about: string;
 }
 
-export default function SectionGraphicDesignPhotography({
+export default function SectionDesignPhoto({
   type,
   image,
   alt,

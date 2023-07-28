@@ -4,7 +4,7 @@ import { informationsTransformPublic } from "../../../informations/informationsT
 import { informationsGraphicDesignPhotography } from "../../../informations/informationsGraphicDesignPhotography";
 
 import SectionTransformPublic from "../sectiontransformpublic/SectionTransformPublic";
-import SectionGraphicDesignPhotography from "../sectiongraphicdesignphotography/SectionGraphicDesignPhotography";
+import SectionGraphicDesignPhotography from "../sectiondesignphoto/SectionDesignPhoto";
 
 export default function ContainerSection({ id }: { id: number }) {
   return (
