@@ -2,14 +2,24 @@ import styles from "./styles.module.css";
 
 import { informationsNavBar } from "../../../informations/informationsNavBar";
 
-export default function NavBar() {
+export default function NavBar({ isFooter }: { isFooter: boolean }) {
   return (
     <nav>
-      <ul className={styles.navBar__ul}>
+      <ul
+        className={
+          isFooter
+            ? `${styles.navBar__ul} ${styles.footer}`
+            : `${styles.navBar__ul}`
+        }
+      >
         {informationsNavBar.map((item) => (
           <li className={styles.navBar__li} key={item.content}>
             <a
-              className={styles.navBar__a}
+              className={
+                isFooter
+                  ? `${styles.navBar__a} ${styles.footer}`
+                  : `${styles.navBar__a}`
+              }
               href='#'
               aria-label={item.ariaLabel}
             >
@@ -18,7 +28,11 @@ export default function NavBar() {
           </li>
         ))}
         <button
-          className={styles.navBar__button}
+          className={
+            isFooter
+              ? `${styles.navBar__button} ${styles.footer}`
+              : `${styles.navBar__button}`
+          }
           role='button'
           aria-label='Contact us'
         >

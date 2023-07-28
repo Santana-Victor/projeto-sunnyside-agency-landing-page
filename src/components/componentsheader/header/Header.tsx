@@ -20,7 +20,7 @@ export default function Header() {
       </picture>
       <div className={styles.header__container}>
         <Logo isFooter={false} />
-        <NavBar />
+        <NavBar isFooter={false} />
         <MenuMobile />
       </div>
       <div className={styles.header__container__title_image}>

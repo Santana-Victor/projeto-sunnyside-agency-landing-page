@@ -15,6 +15,14 @@
   font-size: 18px;
 }
 
+.navBar__a.footer {
+  color: var(--txt-footer);
+}
+
+.navBar__a.footer:hover {
+  color: #ffffff;
+}
+
 .navBar__button {
   border: none;
   border-radius: 25px;
@@ -33,8 +41,16 @@
   background-color: #3cbcfc;
 }
 
+.navBar__button.footer {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .navBar__ul {
     display: none;
+  }
+
+  .navBar__ul.footer {
+    display: flex;
   }
 }
