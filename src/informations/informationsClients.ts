@@ -1,8 +1,12 @@
+import emily from "../assets/images/image-emily.jpg";
+import thomas from "../assets/images/image-thomas.jpg";
+import jennie from "../assets/images/image-jennie.jpg";
+
 export const informationsClients = [
   {
-    id: 1,
+    id: 20,
     type: "client",
-    image: "image-emily.jpg",
+    image: emily,
     alt: "Emily R.",
     width: 144,
     height: 144,
@@ -12,9 +16,9 @@ export const informationsClients = [
     office: "Marketing Director",
   },
   {
-    id: 2,
+    id: 22,
     type: "client",
-    image: "image-thomas.jpg",
+    image: thomas,
     alt: "Thomas S.",
     width: 144,
     height: 144,
@@ -24,9 +28,9 @@ export const informationsClients = [
     office: "Chief Operating Officer",
   },
   {
-    id: 3,
+    id: 24,
     type: "client",
-    image: "image-jennie.jpg",
+    image: jennie,
     alt: "Jennie F.",
     width: 144,
     height: 144,
