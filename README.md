@@ -26,6 +26,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 💻 Projeto
 
 Projeto tirado do Front-end mentor, este projeto é uma landing page feita em React.js + Typescript
-com o intuito de práticar as funcionalidades do React.js.
+com o intuito de praticar as funcionalidades do React.js.
 
 - [Acesse o projeto finalizado, online](https://santana-victor.github.io/projeto-sunnyside-agency-landing-page/)
