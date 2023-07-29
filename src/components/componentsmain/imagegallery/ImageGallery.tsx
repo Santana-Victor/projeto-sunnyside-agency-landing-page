@@ -7,12 +7,9 @@ export default function ImageGallery() {
     <div className={styles.container_images}>
       {informationsImageGallery.map((item) => (
         <picture key={item.id}>
-          <source
-            media='(max-width: 500px)'
-            srcSet={`/images/mobile/${item.image}`}
-          />
+          <source media='(max-width: 500px)' srcSet={item.smallImage} />
           <img
-            src={`/images/desktop/${item.image}`}
+            src={item.largeImage}
             alt={item.alt}
             width={item.width}
             height={item.height}

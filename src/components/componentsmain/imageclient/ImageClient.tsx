@@ -10,13 +10,7 @@ interface PropsImage {
 export default function ImageClient({ image, alt, width, height }: PropsImage) {
   return (
     <div className={styles.image__container}>
-      <img
-        src={`/images/${image}`}
-        alt={alt}
-        width={width}
-        height={height}
-        loading='lazy'
-      />
+      <img src={image} alt={alt} width={width} height={height} loading='lazy' />
     </div>
   );
 }

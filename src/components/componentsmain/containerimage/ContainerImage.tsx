@@ -2,7 +2,8 @@ import styles from "./styles.module.css";
 
 interface PropsImage {
   type: string;
-  image: string;
+  largeImage: string;
+  smallImage: string;
   alt: string;
   width: number;
   height: number;
@@ -10,7 +11,8 @@ interface PropsImage {
 
 export default function ContainerImage({
   type,
-  image,
+  largeImage,
+  smallImage,
   alt,
   width,
   height,
@@ -25,18 +27,12 @@ export default function ContainerImage({
     >
       <picture>
         {type === "graphic design" || type === "photography" ? (
-          <source
-            media='(max-width: 500px)'
-            srcSet={`images/mobile/${image}`}
-          />
+          <source media='(max-width: 500px)' srcSet={smallImage} />
         ) : (
-          <source
-            media='(max-width: 768px)'
-            srcSet={`images/mobile/${image}`}
-          />
+          <source media='(max-width: 768px)' srcSet={smallImage} />
         )}
         <img
-          src={`images/desktop/${image}`}
+          src={largeImage}
           alt={alt}
           width={width}
           height={height}

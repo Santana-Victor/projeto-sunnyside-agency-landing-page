@@ -12,7 +12,7 @@ export default function SectionClients() {
       <Subtitle type='clients'>Client testimonials</Subtitle>
       <div className={styles.section__container}>
         {informationsClients.map((client) => (
-          <div className={styles.container__container} key={client.id + 5}>
+          <div className={styles.container__container} key={client.id}>
             <ImageClient
               image={client.image}
               alt={client.alt}

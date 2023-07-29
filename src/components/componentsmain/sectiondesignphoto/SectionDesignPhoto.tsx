@@ -5,7 +5,8 @@ import Subtitle from "../subtitle/Subtitle";
 
 interface PropsGraphicDesignPhotography {
   type: string;
-  image: string;
+  largeImage: string;
+  smallImage: string;
   alt: string;
   width: number;
   height: number;
@@ -15,7 +16,8 @@ interface PropsGraphicDesignPhotography {
 
 export default function SectionDesignPhoto({
   type,
-  image,
+  largeImage,
+  smallImage,
   alt,
   width,
   height,
@@ -26,7 +28,8 @@ export default function SectionDesignPhoto({
     <section className={styles.section}>
       <ContainerImage
         type={type}
-        image={image}
+        largeImage={largeImage}
+        smallImage={smallImage}
         alt={alt}
         width={width}
         height={height}

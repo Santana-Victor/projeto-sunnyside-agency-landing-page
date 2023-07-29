@@ -7,7 +7,8 @@ interface PropsSection {
   type: string;
   title: string;
   about: string;
-  image: string;
+  largeImage: string;
+  smallImage: string;
   alt: string;
   width: number;
   height: number;
@@ -17,7 +18,8 @@ export default function SectionTransformPublic({
   type,
   title,
   about,
-  image,
+  largeImage,
+  smallImage,
   alt,
   width,
   height,
@@ -35,7 +37,8 @@ export default function SectionTransformPublic({
           <Article type={type} title={title} about={about} />
           <ContainerImage
             type={type}
-            image={image}
+            largeImage={largeImage}
+            smallImage={smallImage}
             alt={alt}
             width={width}
             height={height}
@@ -45,7 +48,8 @@ export default function SectionTransformPublic({
         <>
           <ContainerImage
             type={type}
-            image={image}
+            largeImage={largeImage}
+            smallImage={smallImage}
             alt={alt}
             width={width}
             height={height}

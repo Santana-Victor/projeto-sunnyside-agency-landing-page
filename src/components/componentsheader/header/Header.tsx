@@ -1,3 +1,5 @@
+import LargeImage from "../../../assets/images/desktop/image-header.jpg";
+import SmallImage from "../../../assets/images/mobile/image-header.jpg";
 import styles from "./styles.module.css";
 
 import Logo from "../logo/Logo";
@@ -9,12 +11,9 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <picture>
-        <source
-          media='(max-width: 768px)'
-          srcSet='/images/mobile/image-header.jpg'
-        />
+        <source media='(max-width: 768px)' srcSet={SmallImage} />
         <img
-          src='/images/desktop/image-header.jpg'
+          src={LargeImage}
           alt='blue background with an orange'
           width={2880}
           height={1600}

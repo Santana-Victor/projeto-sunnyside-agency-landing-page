@@ -7,8 +7,8 @@ import ImageGallery from "../imagegallery/ImageGallery";
 export default function Main() {
   return (
     <main className={styles.main} role='main'>
-      <ContainerSection id={1} />
-      <ContainerSection id={2} />
+      <ContainerSection id={44} />
+      <ContainerSection id={18} />
       <SectionClients />
       <ImageGallery />
     </main>

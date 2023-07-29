@@ -3,7 +3,7 @@ import SmallDesign from "../assets/images/mobile/image-graphic-design.jpg";
 import LargePhotography from "../assets/images/desktop/image-photography.jpg";
 import SmallPhotography from "../assets/images/mobile/image-photography.jpg";
 
-export const informationsDesignPhotography = [
+export const informationsDesignPhoto = [
   {
     id: 16,
     type: "graphic design",
